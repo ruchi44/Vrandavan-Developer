@@ -101,5 +101,25 @@ function revealSections() {
   });
 }
 
+// ✅ Contact form - EmailJS integration
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const statusMsg = document.getElementById('statusMsg');
+  statusMsg.textContent = "Sending message...";
+
+  emailjs.sendForm('service_o5r81xn', 'template_i1n7hrj', this)
+    .then(() => {
+      statusMsg.textContent = "✅ Message sent successfully!";
+      statusMsg.style.color = "green";
+      this.reset();
+    })
+    .catch((error) => {
+      console.error('EmailJS Error:', error);
+      statusMsg.textContent = "❌ Failed to send message. Please try again later.";
+      statusMsg.style.color = "red";
+    });
+});
+
+
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);

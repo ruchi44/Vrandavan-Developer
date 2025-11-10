@@ -8,6 +8,18 @@
   <link rel="icon" href="favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Add this inside <head> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init({
+      publicKey: "DqLYeprlIFs4iE39O"
+    });
+  })();
+</script>
+
+
 </head>
 <body>
   <!-- Sticky header (fixed) -->
@@ -70,7 +82,9 @@
       <div class="hero-inner container">
         <div class="hero-copy">
           <h1>Designing thoughtful spaces for modern living.</h1>
-          <p class="lead">Vrandavan Developer blends sustainable ideas and refined craft to create homes and public spaces that endure. We handle concept, documentation and on-site coordination.</p>
+          <p class="lead">
+          Vrandavan Developer combines innovative design, sustainable practices, and meticulous craftsmanship to deliver spaces that inspire and endure. From initial concept through detailed documentation to on-site coordination, we ensure every project reflects quality and vision.
+          </p>
           <div class="hero-actions">
             <a href="#projects" class="btn-cta">Our Projects</a>
             <!-- About button here uses btn-cta if you prefer; kept as outline for visual variety -->
@@ -92,45 +106,87 @@
       </div>
 
       <div class="container about-grid">
-        <div class="card">
-          <h3>Our Approach</h3>
-          <p class="muted">Site-led design, sustainable materials, and a pragmatic approach to buildability. We create spaces that feel timeless and perform well for everyday life.</p>
+  <div class="card">
+    <h3>Our Approach</h3>
+    <p class="muted">
+      At Vrindavan Developers, we blend creativity, technical precision, and sustainable practices 
+      to deliver projects that stand the test of time. Every space we design reflects your lifestyle, 
+      functional needs, and aesthetic aspirations.
+    </p>
 
-          <!-- Attractive services block (no white-on-white) -->
-          <div class="services attractive-services">
-            <div class="service">
-              <div class="service-icon" aria-hidden="true">🏠</div>
-              <div>
-                <h4>Architecture</h4>
-                <p class="muted">Residential and commercial design focused on context and craft.</p>
-              </div>
-            </div>
-
-            <div class="service">
-              <div class="service-icon" aria-hidden="true">🛋️</div>
-              <div>
-                <h4>Interiors</h4>
-                <p class="muted">Holistic interiors combining comfort and material integrity.</p>
-              </div>
-            </div>
-
-            <div class="service">
-              <div class="service-icon" aria-hidden="true">📐</div>
-              <div>
-                <h4>Master Planning</h4>
-                <p class="muted">Site planning, landscape coordination, and feasibility studies.</p>
-              </div>
-            </div>
-
-            <div class="service">
-              <div class="service-icon" aria-hidden="true">💼</div>
-              <div>
-                <h4>Consultation</h4>
-                <p class="muted">Cost planning, contractor coordination and project reviews.</p>
-              </div>
-            </div>
-          </div>
+    <!-- Attractive services block -->
+    <div class="services attractive-services">
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">🏠</div>
+        <div>
+          <h4>Architecture</h4>
+          <p class="muted">
+            Innovative residential and commercial designs that balance form, function, and elegance.
+          </p>
         </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">🛋️</div>
+        <div>
+          <h4>Interiors</h4>
+          <p class="muted">
+            Beautifully crafted interiors with a focus on detail, comfort, and premium material finishes.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">🏗️</div>
+        <div>
+          <h4>Construction</h4>
+          <p class="muted">
+            End-to-end construction services with a commitment to quality, safety, and on-time delivery.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">🧱</div>
+        <div>
+          <h4>Civil Work</h4>
+          <p class="muted">
+            Expert civil engineering solutions for foundations, structural stability, and site development.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">📏</div>
+        <div>
+          <h4>Structural Design</h4>
+          <p class="muted">
+            Precise structural analysis and design to ensure durability and strength for every project.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">📐</div>
+        <div>
+          <h4>Master Planning</h4>
+          <p class="muted">
+            Comprehensive site planning and landscape design that enhance functionality and aesthetics.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon" aria-hidden="true">💼</div>
+        <div>
+          <h4>Consultation</h4>
+          <p class="muted">
+            Personalized guidance for project budgeting, feasibility, and coordination with contractors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <aside class="card contact-summary">
           <h4>Quick Contact</h4>
@@ -141,72 +197,120 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container header-row">
-        <div>
-          <h2>Featured Projects</h2>
-          <p class="lead">A curated selection of recent work. Click to view larger images.</p>
-        </div>
+<section id="projects" class="section">
+  <div class="container header-row">
+    <div>
+      <h2>Featured Projects</h2>
+      <p class="lead">A curated selection of recent work. Click to view larger images.</p>
+    </div>
+  </div>
+
+  <!-- ===== ARCHITECT PROJECTS ===== -->
+  <div class="container project-category">
+    <h3>Architect Projects</h3>
+    <div class="projects-grid">
+      <div class="project" tabindex="0" data-title="Riverside Residence" data-src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop" alt="Riverside Residence">
+        <div class="overlay">Riverside Residence</div>
       </div>
 
-      <div class="container projects-grid" role="list">
-        <!-- sample projects - replace src and data-src with your images -->
-        <div class="project" role="listitem" tabindex="0" data-title="Riverside Residence" data-src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop">
-          <img loading="lazy" alt="Riverside Residence" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop">
-          <div class="overlay">Riverside Residence</div>
-        </div>
-
-        <div class="project" role="listitem" tabindex="0" data-title="Courtyard Villa" data-src="https://images.unsplash.com/photo-1505842465776-3d7d6db7b6a2?q=80&w=1600&auto=format&fit=crop">
-          <img loading="lazy" alt="Courtyard Villa" src="https://images.unsplash.com/photo-1505842465776-3d7d6db7b6a2?q=80&w=800&auto=format&fit=crop">
-          <div class="overlay">Courtyard Villa</div>
-        </div>
-
-        <div class="project" role="listitem" tabindex="0" data-title="Minimal Loft" data-src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop">
-          <img loading="lazy" alt="Minimal Loft" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop">
-          <div class="overlay">Minimal Loft</div>
-        </div>
-
-        <div class="project" role="listitem" tabindex="0" data-title="Urban Pavilion" data-src="https://images.unsplash.com/photo-1499914485622-a88fac5368e0?q=80&w=1600&auto=format&fit=crop">
-          <img loading="lazy" alt="Urban Pavilion" src="https://images.unsplash.com/photo-1499914485622-a88fac5368e0?q=80&w=800&auto=format&fit=crop">
-          <div class="overlay">Urban Pavilion</div>
-        </div>
-
-        <div class="project" role="listitem" tabindex="0" data-title="Hillside Retreat" data-src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop">
-          <img loading="lazy" alt="Hillside Retreat" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop">
-          <div class="overlay">Hillside Retreat</div>
-        </div>
-
-        <div class="project" role="listitem" tabindex="0" data-title="Contemporary Office" data-src="https://images.unsplash.com/photo-1505691723518-36a6b4a9e3f1?q=80&w=1600&auto=format&fit=crop">
-          <img loading="lazy" alt="Contemporary Office" src="https://images.unsplash.com/photo-1505691723518-36a6b4a9e3f1?q=80&w=800&auto=format&fit=crop">
-          <div class="overlay">Contemporary Office</div>
-        </div>
+      <div class="project" tabindex="0" data-title="Courtyard Villa" data-src="https://images.unsplash.com/photo-1505842465776-3d7d6db7b6a2?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1505842465776-3d7d6db7b6a2?q=80&w=800&auto=format&fit=crop" alt="Courtyard Villa">
+        <div class="overlay">Courtyard Villa</div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <!-- ===== INTERIOR PROJECTS ===== -->
+  <div class="container project-category">
+    <h3>Interior Projects</h3>
+    <div class="projects-grid">
+      <div class="project" tabindex="0" data-title="Minimal Loft" data-src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop" alt="Minimal Loft">
+        <div class="overlay">Minimal Loft</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Urban Pavilion" data-src="https://images.unsplash.com/photo-1499914485622-a88fac5368e0?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1499914485622-a88fac5368e0?q=80&w=800&auto=format&fit=crop" alt="Urban Pavilion">
+        <div class="overlay">Urban Pavilion</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONSTRUCTION PROJECTS ===== -->
+  <div class="container project-category">
+    <h3>Construction Projects</h3>
+    <div class="projects-grid">
+      <div class="project" tabindex="0" data-title="Hillside Retreat" data-src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Hillside Retreat">
+        <div class="overlay">Hillside Retreat</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Contemporary Office" data-src="https://images.unsplash.com/photo-1505691723518-36a6b4a9e3f1?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1505691723518-36a6b4a9e3f1?q=80&w=800&auto=format&fit=crop" alt="Contemporary Office">
+        <div class="overlay">Contemporary Office</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- SERVICES (brief cards) -->
-    <section id="services" class="section">
-      <div class="container header-row">
-        <div>
-          <h2>Services</h2>
-          <p class="lead">From concept to completion — design, documentation and site coordination.</p>
-        </div>
-      </div>
+   <section id="services" class="section">
+  <div class="container header-row">
+    <div>
+      <h2>Services</h2>
+      <p class="lead">
+        From design to delivery — we offer end-to-end architectural, structural, and construction services tailored to your needs.
+      </p>
+    </div>
+  </div>
 
-      <div class="container services-grid">
-        <div class="card service-card">
-          <h3>Concept & Design</h3>
-          <p class="muted">Site analysis, conceptual sketches, 3D visualisations and client workshops.</p>
-        </div>
-        <div class="card service-card">
-          <h3>Documentation</h3>
-          <p class="muted">Construction drawings, specifications, and coordination packages.</p>
-        </div>
-        <div class="card service-card">
-          <h3>Project Management</h3>
-          <p class="muted">Tender support, contractor coordination, and quality control.</p>
-        </div>
-      </div>
-    </section>
+  <div class="container services-grid">
+    <div class="card service-card">
+      <h3>Concept & Design</h3>
+      <p class="muted">
+        Innovative architectural concepts developed through site analysis, client interaction, and functional planning to ensure timeless designs.
+      </p>
+    </div>
+
+    <div class="card service-card">
+      <h3>Documentation</h3>
+      <p class="muted">
+        Comprehensive working drawings, detailed technical documents, and design specifications for accurate and smooth project execution.
+      </p>
+    </div>
+
+    <div class="card service-card">
+      <h3>Project Management</h3>
+      <p class="muted">
+        Efficient project coordination including scheduling, budgeting, and supervision to ensure quality construction and timely delivery.
+      </p>
+    </div>
+
+    <div class="card service-card">
+      <h3>Structural Design</h3>
+      <p class="muted">
+        Safe, reliable, and optimized structural solutions designed with precision for long-lasting strength and stability.
+      </p>
+    </div>
+
+    <div class="card service-card">
+      <h3>Civil Work</h3>
+      <p class="muted">
+        End-to-end civil engineering services covering foundations, site development, and concrete structures with attention to detail.
+      </p>
+    </div>
+
+    <div class="card service-card">
+      <h3>Interior Design</h3>
+      <p class="muted">
+        Elegant and functional interiors tailored to enhance comfort, aesthetics, and harmony between space and lifestyle.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <!-- CONTACT -->
     <section id="contact" class="section">
@@ -231,6 +335,7 @@
 
             <button type="submit" class="btn-cta">Send Message</button>
           </form>
+          <p id="statusMsg" class="status-msg"></p>
         </div>
 
         <aside class="card office">
@@ -293,3 +398,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
