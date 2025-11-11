@@ -64,9 +64,10 @@
       </nav>
 
       <!-- hamburger for mobile -->
-      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
+          <!-- hamburger for mobile -->
+<div id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</div>
+
+
     </div>
 
     <!-- mobile menu container (INTENTIONALLY EMPTY) - JS will populate it -->
@@ -100,103 +101,68 @@
 
     <!-- ABOUT -->
     <section id="about" class="section">
-      <div class="container header-row">
-        <div>
-          <h2>About Vrandavan Developer</h2>
-          <p class="lead">We design architecture with clarity, economy and attention to context. From early concept sketches to final delivery, our process centers the client's needs and the site's potential.</p>
-        </div>
-      </div>
-
-      <div class="container about-grid">
-  <div class="card">
-    <h3>Our Approach</h3>
-    <p class="muted">
-      At Vrindavan Developers, we blend creativity, technical precision, and sustainable practices 
-      to deliver projects that stand the test of time. Every space we design reflects your lifestyle, 
-      functional needs, and aesthetic aspirations.
-    </p>
-
-    <!-- Attractive services block -->
-    <div class="services attractive-services">
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">🏠</div>
-        <div>
-          <h4>Architecture</h4>
-          <p class="muted">
-            Innovative residential and commercial designs that balance form, function, and elegance.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">🛋️</div>
-        <div>
-          <h4>Interiors</h4>
-          <p class="muted">
-            Beautifully crafted interiors with a focus on detail, comfort, and premium material finishes.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">🏗️</div>
-        <div>
-          <h4>Construction</h4>
-          <p class="muted">
-            End-to-end construction services with a commitment to quality, safety, and on-time delivery.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">🧱</div>
-        <div>
-          <h4>Civil Work</h4>
-          <p class="muted">
-            Expert civil engineering solutions for foundations, structural stability, and site development.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">📏</div>
-        <div>
-          <h4>Structural Design</h4>
-          <p class="muted">
-            Precise structural analysis and design to ensure durability and strength for every project.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">📐</div>
-        <div>
-          <h4>Master Planning</h4>
-          <p class="muted">
-            Comprehensive site planning and landscape design that enhance functionality and aesthetics.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-icon" aria-hidden="true">💼</div>
-        <div>
-          <h4>Consultation</h4>
-          <p class="muted">
-            Personalized guidance for project budgeting, feasibility, and coordination with contractors.
-          </p>
-        </div>
-      </div>
+  <div class="container header-row">
+    <div>
+      <h2>Our Approach</h2>
+      <p class="lead">
+        At Vrindavan Developers, we blend creativity, technical precision, and sustainable practices to deliver projects that stand the test of time.
+        Every space we design reflects your lifestyle, functional needs, and aesthetic aspirations.
+      </p>
     </div>
   </div>
 
-        <aside class="card contact-summary">
-          <h4>Quick Contact</h4>
-          <p class="muted">Phone: <a href="tel:+919713673355">9713673355</a><br>Email: <a href="mailto:Vrandavandevelopers55@gmail.com">Vrandavandevelopers55@gmail.com</a></p>
-          <p class="muted small">Mon–Fri: 9:30am – 6:30pm</p>
-        </aside>
-      </div>
-    </section>
+  <div class="container about-grid">
+    <div class="card about-card">
+      <h3>Architecture</h3>
+      <p class="muted">
+        Innovative residential and commercial designs that balance form, function, and elegance.
+      </p>
+    </div>
+
+    <div class="card about-card">
+      <h3>Interiors</h3>
+      <p class="muted">
+        Beautifully crafted interiors with a focus on detail, comfort, and premium material finishes.
+      </p>
+    </div>
+
+    <div class="card about-card">
+      <h3>Construction</h3>
+      <p class="muted">
+        End-to-end construction services with a commitment to quality, safety, and on-time delivery.
+      </p>
+    </div>
+
+    <div class="card about-card">
+      <h3>Civil Work</h3>
+      <p class="muted">
+        Expert civil engineering solutions for foundations, structural stability, and site development.
+      </p>
+    </div>
+
+    <div class="card about-card">
+      <h3>Structural Design</h3>
+      <p class="muted">
+        Precise structural analysis and design to ensure durability and strength for every project.
+      </p>
+    </div>
+
+    <div class="card about-card">
+      <h3>Master Planning</h3>
+      <p class="muted">
+        Comprehensive site planning and landscape design that enhance functionality and aesthetics.
+      </p>
+    </div>
+
+    <div class="card about-card">
+      <h3>Consultation</h3>
+      <p class="muted">
+        Personalized guidance for project budgeting, feasibility, and coordination with contractors.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <!-- PROJECTS -->
 <section id="projects" class="section">
@@ -211,50 +177,97 @@
   <div class="container project-category">
     <h3>Architect Projects</h3>
     <div class="projects-grid">
-      <div class="project" tabindex="0" data-title="Riverside Residence" data-src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop" alt="Riverside Residence">
-        <div class="overlay">Riverside Residence</div>
+      <div class="project" tabindex="0" data-title="Pearl Villa" data-src="images/architecht/architech.jpg">
+        <img src="images/architecht/architech.jpg" alt="Pearl Villa">
+        <div class="overlay">Pearl Villa</div>
       </div>
 
-      <div class="project" tabindex="0" data-title="Courtyard Villa" data-src="https://images.unsplash.com/photo-1505842465776-3d7d6db7b6a2?q=80&w=1600&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1505842465776-3d7d6db7b6a2?q=80&w=800&auto=format&fit=crop" alt="Courtyard Villa">
-        <div class="overlay">Courtyard Villa</div>
+      <div class="project" tabindex="0" data-title="Omkar Heights" data-src="images/architecht/architech_2.jpg">
+        <img src="images/architecht/architech_2.jpg" alt="Omkar Heights">
+        <div class="overlay">Omkar Heights</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Gokul Mansion" data-src="images/architecht/architech_3.jpg">
+        <img src="images/architecht/architech_3.jpg" alt="Gokul Mansion">
+        <div class="overlay">Gokul Mansion</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Meera Enclave" data-src="images/architecht/arch_4.jpg">
+        <img src="images/architecht/arch_4.jpg" alt="Meera Enclave">
+        <div class="overlay">Meera Enclave</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Ananta Residency" data-src="images/architecht/arch_5.jpg">
+        <img src="images/architecht/arch_5.jpg" alt="Ananta Residency">
+        <div class="overlay">Ananta Residency</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Vrindavan Heights" data-src="images/architecht/arch_6.jpg">
+        <img src="images/architecht/arch_6.jpg" alt="Vrindavan Heights">
+        <div class="overlay">Vrindavan Heights</div>
       </div>
     </div>
   </div>
 
-  <!-- ===== INTERIOR PROJECTS ===== -->
   <div class="container project-category">
     <h3>Interior Projects</h3>
     <div class="projects-grid">
-      <div class="project" tabindex="0" data-title="Minimal Loft" data-src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop" alt="Minimal Loft">
-        <div class="overlay">Minimal Loft</div>
+      <div class="project" tabindex="0" data-title="Multi Purpose Room" data-src="images/interior/lmulti_purpose_room.jpg">
+        <img src="images/interior/lmulti_purpose_room.jpg" alt="Multi Purpose Room">
+        <div class="overlay">Multi Purpose Room</div>
       </div>
 
-      <div class="project" tabindex="0" data-title="Urban Pavilion" data-src="https://images.unsplash.com/photo-1499914485622-a88fac5368e0?q=80&w=1600&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1499914485622-a88fac5368e0?q=80&w=800&auto=format&fit=crop" alt="Urban Pavilion">
-        <div class="overlay">Urban Pavilion</div>
+      <div class="project" tabindex="0" data-title="Bed_view" data-src="images/interior/Bed_view.jpg">
+        <img src="images/interior/Bed_view.jpg" alt="Bed_view">
+        <div class="overlay">Bed View</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Dining Area" data-src="images/interior/dining.jpg">
+        <img src="images/interior/dining.jpg" alt="Dining Area">
+        <div class="overlay">Dining Area</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Tv_unit" data-src="images/interior/TV_unit.jpg">
+        <img src="images/interior/TV_unit.jpg" alt="Tv_unit">
+        <div class="overlay">TV Unit</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="window" data-src="images/interior/window.jpg">
+        <img src="images/interior/window.jpg" alt="window">
+        <div class="overlay">Window</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Living_room" data-src="images/interior/living_room.jpg">
+        <img src="images/interior/living_room.jpg" alt="Living_room">
+        <div class="overlay">Living Room</div>
       </div>
     </div>
   </div>
+
 
   <!-- ===== CONSTRUCTION PROJECTS ===== -->
   <div class="container project-category">
     <h3>Construction Projects</h3>
     <div class="projects-grid">
-      <div class="project" tabindex="0" data-title="Hillside Retreat" data-src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Hillside Retreat">
+      <div class="project" tabindex="0" data-title="Hillside Retreat" data-src="images/contruction/const.jpg">
+        <img src="images/contruction/const.jpg" alt="Hillside Retreat">
         <div class="overlay">Hillside Retreat</div>
       </div>
 
-      <div class="project" tabindex="0" data-title="Contemporary Office" data-src="https://images.unsplash.com/photo-1505691723518-36a6b4a9e3f1?q=80&w=1600&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1505691723518-36a6b4a9e3f1?q=80&w=800&auto=format&fit=crop" alt="Contemporary Office">
+      <div class="project" tabindex="0" data-title="Contemporary Office" data-src="images/contruction/const_2.jpg">
+        <img src="images/contruction/const_2.jpg" alt="Contemporary Office">
+        <div class="overlay">Contemporary Office</div>
+      </div>
+
+      <div class="project" tabindex="0" data-title="Contemporary Office" data-src="images/contruction/construct_3.jpg">
+        <img src="images/contruction/construct_1.jpg" alt="Contemporary Office">
         <div class="overlay">Contemporary Office</div>
       </div>
     </div>
   </div>
-</section>
+
+
+  </section>
 
 
     <!-- SERVICES (brief cards) -->
@@ -291,7 +304,7 @@
     </div>
 
     <div class="card service-card">
-      <h3>Structural Design</h3>
+      <h3>Structure Design</h3>
       <p class="muted">
         Safe, reliable, and optimized structural solutions designed with precision for long-lasting strength and stability.
       </p>
@@ -342,60 +355,72 @@
 
         <aside class="card office">
           <h3>Office</h3>
-          <p class="muted">Vrandavan Developer<br>123, SS Infinitus, MR-11 Road, Indore(M.P,)<br>Phone: <a href="tel:+919713673355">9713673355</a><br>Email: <a href="mailto:Vrandavandevelopers55@gmail.com">Vrandavandevelopers55@gmail.com</a></p>
+          <p class="muted">Vrandavan Developer<br>123, SS Infinitus, MR-11 Road, Indore(M.P,)<br>Phone: <a href="tel:+919713673355">9713673355</a><br>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Vrandavandevelopers55@gmail.com&su=Inquiry%20about%20project&body=Hello%20Vrandavan%20Developer,">Vrandavandevelopers55@gmail.com</a></p>
         </aside>
       </div>
     </section>
   </main>
 
   <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
-      <div class="lightbox-inner">
-        <img id="lightboxImg" src="" alt="">
-        <div id="lightboxTitle" class="lightbox-title"></div>
-      </div>
-      <button id="lightboxClose" class="btn-close" aria-label="Close">Close ✕</button>
-    </div>
+  <!-- Lightbox Modal -->
+<!--<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-content">
+    <button id="lightboxClose" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="Project Image">
+    <h3 id="lightboxTitle"></h3>
   </div>
+</div>-->
+
 
   <!-- FOOTER (dark charcoal) -->
-  <footer class="site-footer">
-    <div class="footer-inner container">
-      <div class="footer-left">
-        <!-- small svg icon -->
-        <svg class="logo-small" width="48" height="48" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="g-teal-f" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#0fb9b2"/><stop offset="1" stop-color="#0b8f86"/></linearGradient></defs>
-          <g transform="translate(10,8)"><path d="M20 4 L50 20 L20 36 L-10 20 Z" fill="url(#g-teal-f)"/><path d="M0 20 L20 60 L40 20" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/></g>
-        </svg>
-        <div>
-          <div class="brand-title small" style="color:#fff">Vrandavan</div>
-          <div class="muted small" style="color:rgba(255,255,255,0.85)">Developer</div>
-        </div>
-      </div>
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner container" style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:5px; padding:10px 0;">
 
-      <div class="footer-center">
-        <div class="contact-line" style="color:#fff"><strong>Phone:</strong> <a href="mob:+919713673355" style="color:inherit;text-decoration:none">9713673355</a></div>
-        <div class="contact-line" style="color:#fff"><strong>Email:</strong> <a href="mailto:Vrandavandevelopers55@gmail.com" style="color:inherit;text-decoration:underline">Vrandavandevelopers55@gmail.com</a></div>
-        <div class="contact-line" style="color:#fff"><strong>Address:</strong>123, SS Infinitus, MR-11 Road, Indore(M.P.)</div>
-      </div>
+    <!-- Logo + brand name side-by-side -->
+    <div class="footer-logo" style="display:flex; align-items:center; justify-content:center; gap:10px;">
+      <svg class="logo" width="48" height="48" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="g-teal-footer" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#0fb9b2"/>
+            <stop offset="1" stop-color="#0b8f86"/>
+          </linearGradient>
+          <filter id="f-shadow-footer" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#062425" flood-opacity="0.1"/>
+          </filter>
+        </defs>
+        <g transform="translate(10,8)">
+          <path d="M20 4 L50 20 L20 36 L-10 20 Z" fill="url(#g-teal-footer)" filter="url(#f-shadow-footer)"/>
+          <path d="M0 20 L20 60 L40 20" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M52 20 L52 60" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M52 20 Q84 40 52 60" stroke="url(#g-teal-footer)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
 
-      <div class="footer-right">
-        <div class="social">
-          <a href="#" aria-label="Instagram" class="social-link" title="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" class="social-link" title="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M7 10v7M7 7v.01M11 17v-4a1.5 1.5 0 0 1 3 0v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-          </a>
-          <a href="#" aria-label="Facebook" class="social-link" title="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 8h2.5V5.5A2.5 2.5 0 0 0 15 3h-2v5h-2v2h2v7h2v-7h2.5l.5-2H15V8z" fill="currentColor"/></svg>
-          </a>
-        </div>
-        <div class="small" style="color:rgba(255,255,255,0.86)">© <span id="year"></span> Vrandavan Developer</div>
+      <div class="brand-text" style="color:#fff; text-align:left;">
+        <div class="brand-title" style="font-size:20px; font-weight:600; color:#fff;">Vrandavan</div>
+        <div class="brand-sub" style="font-size:15px; opacity:0.9;">Developer</div>
       </div>
     </div>
-  </footer>
+
+    <!-- Contact details -->
+    <div class="footer-details" style="color:#fff; opacity:0.9; line-height:1.6; font-size:14px;">
+      <div><strong>Phone:</strong> <a href="tel:+919713673355" style="color:inherit; text-decoration:none;">9713673355</a></div>
+      <div><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Vrandavandevelopers55@gmail.com&su=Inquiry%20about%20project&body=Hello%20Vrandavan%20Developer," target="_blank" style="color:#fff; text-decoration:none;">
+  Vrandavandevelopers55@gmail.com
+</a></div>
+      <div><strong>Address:</strong> 123, SS Infinitus, MR-11 Road, Indore (M.P.)</div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center;">
+      <span class="muted small" style="color:rgba(255,255,255,0.85); font-family:'Open Sans', sans-serif; font-size:14px;"><strong>VD</strong> = Crafting exceptional spaces since 2018</span>
+    </div>
+  </div>
+</footer>
+
+
 
   <script src="script.js"></script>
 </body>

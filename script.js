@@ -107,7 +107,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const statusMsg = document.getElementById('statusMsg');
   statusMsg.textContent = "Sending message...";
 
-  emailjs.sendForm('service_o5r81xn', 'template_i1n7hrj', this)
+  emailjs.sendForm('service_angy4rp', 'template_i1n7hrj', this)
     .then(() => {
       statusMsg.textContent = "✅ Message sent successfully!";
       statusMsg.style.color = "green";
