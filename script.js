@@ -123,3 +123,29 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
+
+function setEmailLink(el) {
+  const isMobile = window.innerWidth <= 700;
+
+  if (isMobile) {
+    el.href = "mailto:Vrandavandevelopers55@gmail.com?subject=Inquiry%20about%20project&body=Hello%20Vrandavan%20Developer,";
+    el.removeAttribute('target');
+  } else {
+    el.href = "https://mail.google.com/mail/?view=cm&fs=1&to=Vrandavandevelopers55@gmail.com&su=Inquiry%20about%20project&body=Hello%20Vrandavan%20Developer,";
+    el.target = "_blank";
+  }
+}
+
+// Apply to both links
+const emailLinks = [document.getElementById('emailLinkFooter'), document.getElementById('emailLink')];
+
+emailLinks.forEach(link => {
+  if (link) setEmailLink(link);
+});
+
+// Optional: update on resize
+window.addEventListener('resize', () => {
+  emailLinks.forEach(link => {
+    if (link) setEmailLink(link);
+  });
+});

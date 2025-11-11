@@ -391,8 +391,7 @@ section.visible {
   .hamburger {
     display: inline-flex !important;
     margin-left: auto; /* ensures it stays on the right */
-  }
-  
+  }  
   .primary-nav {
     display: none !important;
   }
